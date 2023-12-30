@@ -1,0 +1,31 @@
+@media (max-height: 1280px) {
+    main .w-full .inline-flex{
+        margin-top: 15rem;
+    }
+}
+@media (max-height: 1280px) {
+    main .w-full .inline-flex{
+        margin-top: 10rem;
+    }
+}
+@media (max-width: 912px) {
+    main .w-full .inline-flex{
+        margin-top: 20rem;
+    }
+}
+@media (max-width: 500px) {
+    main .w-full .inline-flex{
+        margin-top: 12rem;
+    }
+    main .w-full .inline-flex a{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    main .w-full .inline-flex{
+        margin-top: 6rem;
+    }
+    main .w-full .inline-flex a{
+        font-size: 2rem;
+    }
+}

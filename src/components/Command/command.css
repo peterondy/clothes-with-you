@@ -1,0 +1,94 @@
+.outfit-div {
+    background: linear-gradient(to right, #aba1d2, #786daa);
+    margin-top: 15rem;
+}
+.clothes-div {
+    background: linear-gradient(to right, #aba1d2, #aca5ce);
+    margin-top: 15rem;
+}
+
+@media (max-height: 1024px) {
+    .outfit-div , .clothes-div {
+        margin-top: 9rem;
+    }
+    .outfit-div p, .clothes-div p {
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-height: 1280px) {
+    .outfit-div , .clothes-div {
+        margin-top: 21rem;
+    }
+    .outfit-div p, .clothes-div p {
+        font-size: 1.45rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 540px) {
+    .outfit-div , .clothes-div {
+        margin-top: 17rem;
+    }
+    .outfit-div p, .clothes-div p {
+        font-size: 1rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 912px) {
+    .outfit-div , .clothes-div {
+        margin-top: 55rem;
+        height: 14rem;
+    }
+    .outfit-div p, .clothes-div p {
+        font-size: 1.8rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 1024px) {
+    .outfit-div , .clothes-div {
+        margin-top: 40rem;
+        height: 14rem;
+        margin-bottom: 2rem;
+    }
+    .outfit-div p, .clothes-div p {
+        font-size: 1.8rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 768px) {
+    .outfit-div , .clothes-div {
+        margin-top: 30rem;
+        height: 14rem;
+    }
+    .outfit-div p, .clothes-div p {
+        font-size: 1.4rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 500px) {
+    .outfit-div , .clothes-div {
+        margin-top: 28rem;
+    }
+    .outfit-div p,a , .clothes-div p,a {
+        font-size: .85rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 412px) {
+    .outfit-div , .clothes-div {
+        margin-top: 25rem;
+    }
+    .outfit-div p,a , .clothes-div p,a {
+        font-size: 0.85rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}
+@media (max-width: 400px) {
+    .outfit-div , .clothes-div {
+        margin-top: 25rem;
+    }
+    .outfit-div p,a , .clothes-div p,a {
+        font-size: 0.6rem; /* 20px */
+        line-height: 1.75rem;
+    }
+}

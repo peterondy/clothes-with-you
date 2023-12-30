@@ -1,0 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/541506a62fe3206aa37b6db532a9b3c6?family=Cheque+Regular);
+*{
+  font-family: "Cheque Regular";
+}
+body {
+  margin: 0;
+  font-family: "Cheque Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff0f0;
+  overflow-x: hidden !important;
+}
