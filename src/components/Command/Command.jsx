@@ -1,6 +1,7 @@
 import React from 'react'
 import background from '../../images/mens_brand.jpg'
 import './command.css'
+
 const Command = () => {
   return (
     <section className='h-screen w-full mb-12' 
