@@ -3,7 +3,6 @@ import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Command from './components/Command/Command'
 import Discover from './components/Discover/Discover'
-import { Footer } from './components/Footer/Footer'
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <Main/>
       <Command/>
       <Discover/>
-      <Footer/>
     </div>
   );
 }
