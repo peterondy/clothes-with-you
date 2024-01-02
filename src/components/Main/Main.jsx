@@ -1,7 +1,5 @@
 import React from 'react'
-//import background from '../../images/video_background.mp4'
 import './main.css'
-//import walpaper from '../../images/walpaper.jpg'
 import logo from '../../images/logo.png'
 
 const Main = () => {
