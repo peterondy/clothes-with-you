@@ -1,33 +1,32 @@
 import React from 'react'
 //import background from '../../images/video_background.mp4'
 import './main.css'
-import walpaper from '../../images/walpaper.jpg'
+//import walpaper from '../../images/walpaper.jpg'
 import logo from '../../images/logo.png'
 
 const Main = () => {
 
     return (
-        <main className='h-screen w-full'
-            style={{ 
-                height: 'calc(100vh - 112px)', 
-                backgroundImage: `url(${walpaper})`,
-                backgroundPosition: 'center',
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'fixed'
-            }}>
-            <h2 className='text-[#ffffff] text-5xl pt-8 z-50 inline-flex uppercase'><b>clothes with you</b> <img src={logo} className='w-[100px] h-[80px] relative top-[-30px]' alt="logo" /></h2>
-            <div className='w-full'>
-                <h3 className='text-[#c4c2c5] text-2xl bg-transparent'><b>Welcome in the complex styling's world</b></h3>
-            </div>
-            <div className='w-full z-50 text-center justify-center justify-items-center justify-self-center'>
-                <ul>
-                    <li className='w-full border-gray-50 border-solid border-[1px] text-3xl'><a href="/outfit" className='text-gray-50 my-8 rounded w-full hover:text-gray-400'>I'm looking for outfit</a></li>
-                    <li className='w-full border-gray-50 border-solid border-[1px] text-3xl'><a href="/piece" className='text-gray-50 my-8 rounded w-full hover:text-gray-400'>I'm looking for a piece of clothing</a></li>
-                    <li className='w-full border-gray-50 border-solid border-[1px] text-3xl'><a href="/ai-power" className='text-gray-50 my-8 rounded w-full hover:text-gray-400'>I discover AI power</a></li>
-                </ul>
-            </div>
-        </main>
+        <div className='ml-8 h-full w-full' >
+            <header className='h-28 w-full'>
+                <h1 className='text-2xl pt-8 text-[#ffffff] w-full' style={{fontFamily: 'Staatliches'}}> <span className='float-left float-start mr-4'>Developed by </span> <a href='/' className='text-[#aaa69a] hover:text-[#5f6363] float-left float-start'>SEN</a></h1>
+            </header>
+            <main className='h-full w-full'>
+                <div className="w-full h-44 inline-flex">
+                    <h2 className='float-left float-start text-[#ffffff] w-full text-5xl pt-8 z-50 inline-flex uppercase'><b><span className='float-left'>clothes</span> <br />  <span className='float-left float-start'>with <br /> you</span> <img src={logo} className='w-[150px] h-[150px] relative top-[-125px] left-[90px]' alt="logo" /></b></h2>
+                </div>
+                <div className='w-full h-42'>
+                    <h3 className='mt-12 text-[#c4c2c5] text-6xl bg-transparent w-full element'><b className='float-left'><span className='float-left'>Welcome in the complex </span><br /> <span className='float-left'> styling's world</span></b></h3>
+                </div>
+                <div className='w-full z-50 text-center justify-center justify-items-center justify-self-center'>
+                    <ul className='float-left float-start'>
+                        <li className='rounded border-gray-50 border-solid border-[1px] text-2xl'><a href="/outfit" className='element text-gray-50 rounded w-full hover:text-gray-400'>I'm looking for outfit</a></li>
+                        <li className='rounded border-gray-50 border-solid border-[1px] text-2xl'><a href="/piece" className='element text-gray-50 rounded w-full hover:text-gray-400'>I'm looking for a piece of clothing</a></li>
+                        <li className='rounded border-gray-50 border-solid border-[1px] text-2xl'><a href="/ai-power" className='element text-gray-50 rounded w-full hover:text-gray-400'>I discover AI power</a></li>
+                    </ul>
+                </div>
+            </main>
+        </div>
     )
 }
 
