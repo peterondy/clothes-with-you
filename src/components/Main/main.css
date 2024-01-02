@@ -8,12 +8,13 @@ h3{
     /*font-family: 'Ruda', sans-serif;
     font-family: 'Staatliches', sans-serif;*/
     font-family: 'Bebas Neue', sans-serif;
+    margin-top: 3rem;
+    font-size: 3.75rem;
 }
 main .w-full ul{
-    margin-left: 0;
     width: 100%;
-    margin-top: 0;
-    display: grid;
+    margin-top: 2rem;
+    display: inline-block;
 }
 main .w-full ul li{
     margin-top: .5rem;
@@ -38,39 +39,48 @@ ul li a {
     animation: moveRight 1.5s linear;
   }
 
+@media (max-width: 1024px) {
+    main .w-full ul li a{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
 
+@media (max-width: 920px) {
+    main .w-full ul{
+        display: inline-grid;
+    }
+}
 
 @media (max-width: 820px) {
     main .w-full ul{
-        margin-left: 150px;
-        margin-top: 5rem;
-        width: 400px;
-        display: block;
+        width: 90%;
+        display: inline-grid;
     }
 }
 @media (max-width: 600px) {
-    main .w-full ul{
-        margin-left: 70px;
-        margin-top: 1.5rem;
-        width: 400px;
-        display: block;
+    h2{
+        font-size: 1.8rem !important;
+    }
+    h3{
+        font-size: 3rem;
     }
 }
 @media (max-width: 500px) {
     main .w-full ul{
         margin-left: 0;
     }
-    main div h3{
-        font-size: 2.3rem !important;
+    h2{
+        font-size: 1.8rem !important;
     }
-    main .w-full ul li{
-        font-size: 1.3rem;
-        width: calc(100% - 2rem); /* Replace 10px with the desired margin */
+    h3{
+        font-size: 2rem;
     }
 }
 @media (max-width: 400px) {
     main div h3{
-        font-size: 2rem !important;
+        font-size: 2rem ;
+        margin-top: 1rem;
     }
     main .w-full ul li{
         font-size: 1rem;
@@ -78,10 +88,20 @@ ul li a {
 }
 @media (max-width: 300px) {
     main .w-full ul{
-        width: 250px;
+        width: 100%;
     }
     main .w-full ul li{
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    main .w-full ul li a{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem !important;
+        margin-top: 0;
+    }
+    h2{
+        padding-top: 0;
     }
 }
