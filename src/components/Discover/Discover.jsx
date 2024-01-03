@@ -1,16 +1,43 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './discover.css'
 const Discover = () => {
+  useEffect(() => {
+    function handleScroll() {
+      var element = document.getElementById('h1')
+      var section = document.getElementById('ai')
+      
+      if (element && section) {
+        var sectionPosition = section.getBoundingClientRect().top + window.scrollY
+        var scrollPosition = window.scrollY
+    
+        if (scrollPosition >= sectionPosition) {
+          element.classList.add('moveRight')
+        } else {
+          element.classList.remove('moveRight')
+
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    // Clean up function
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
-    <aside className='w-[80%] mx-[10%] mb-4 '>
-        <h1 className='text-4xl'>
-            no inspiration?<br />
-            don't worry put an outfit style that you like and let ai find you where you can buy the outfits piece
+    <section className='w-[100%] h-screen' id='ai'>
+      <div className='w-[90%] mx-[5%]'>
+        <h1 className='float-left float-start' id='h1'>
+            You saw someone with your dream's outfit but you don't know where find it? <br />
+            Here is the place to be ! Enter a picture of the outfit and let the AI search for you
         </h1>
         <div className='mt-24 w-full h-52 discover rounded'>
-            <a href="/discover"><h6 className='text-4xl pt-24'>discover ai power</h6></a>
+            <a href="/discover">Get started</a>
         </div>
-    </aside>
+      </div>
+    </section>
   )
 }
 
