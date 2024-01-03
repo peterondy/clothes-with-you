@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ruda&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heading+Now:wght@100&display=swap');
 
+main h1,h2,h3,h4,h5,h6{
+    float: left !important;
+}
 main h2 {
     font-family: 'heading-now', sans-serif !important;
-  }
+    font-size: 4rem;
+    height: 400px;
+}
 h3{
-    /*font-family: 'Ruda', sans-serif;
-    font-family: 'Staatliches', sans-serif;*/
     font-family: 'Bebas Neue', sans-serif;
-    margin-top: 3rem;
-    font-size: 3.75rem;
+    font-size: 3.75rem ;
+    margin-bottom: 4rem;
+}
+main div a{
+    font-family: 'Source Serif Pro', sans-serif;
+    margin-top: 2rem;                     
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+     box-shadow: 0px -1px #fff;
 }
 main .w-full ul{
     width: 100%;
@@ -26,6 +38,13 @@ main .w-full ul li{
     display: inline-block;
 
 }
+img{
+    width: 400px;
+    height: 350px;
+    top: -310px;
+    left: 130px;
+    position: relative;
+}
 
 @keyframes moveRight {
     0% { transform: translateX(-2000px); }
@@ -38,6 +57,23 @@ ul li a {
     display: block;
     animation: moveRight 1.5s linear;
   }
+
+  
+@media (max-height: 800px) {
+    main h2 {
+        height: 150px;
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 3rem ;
+    }
+    img{
+        width: 200px;
+        height: 150px;
+        top: -149px;
+        left: 70px;
+    }
+}
 
 @media (max-width: 1024px) {
     main .w-full ul li a{
@@ -60,7 +96,7 @@ ul li a {
 }
 @media (max-width: 600px) {
     h2{
-        font-size: 1.8rem !important;
+        font-size: 2rem;
     }
     h3{
         font-size: 3rem;
@@ -71,19 +107,30 @@ ul li a {
         margin-left: 0;
     }
     h2{
-        font-size: 1.8rem !important;
+        font-size: 3rem ;
+        height: 350px;
     }
     h3{
-        font-size: 2rem;
+        
+        font-size: 3rem;
+    }
+    img{
+        top: -200px;
+        left: 90px;
+        width: 220px;
+        height: 230px;
     }
 }
 @media (max-width: 400px) {
-    main div h3{
-        font-size: 2rem ;
-        margin-top: 1rem;
-    }
+
     main .w-full ul li{
         font-size: 1rem;
+    }
+    main div h2 {
+        height: 150px;
+    }
+    main div a{
+        font-size: 2rem;
     }
 }
 @media (max-width: 300px) {
@@ -98,10 +145,17 @@ ul li a {
         padding-right: 1.5rem;
     }
     h3{
-        font-size: 1.5rem !important;
+        font-size: 1.5rem;
         margin-top: 0;
     }
-    h2{
+    main h2{
         padding-top: 0;
+        font-size: 2rem;
+    }
+    img{
+        top: -200px;
+        left: 90px;
+        width: 150px;
+        height: 230px;
     }
 }
