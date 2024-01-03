@@ -9,5 +9,8 @@ body {
   font-family: "Cheque Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
+}
+#root{
+  background-color: #000;
 }
