@@ -31,7 +31,7 @@ function App() {
                 <h2 className='float-left float-start text-[#ffffff] w-full z-50 inline-flex uppercase'><b><span className='float-left'>clothes</span> <br />  <span className='float-left float-start'>with <br /> you</span> <img src={logo} alt="logo" /></b></h2>
             </div>
             <div className='w-full'>
-                <h3 className='text-[#ffffff] bg-transparent w-full element'><b className='float-left'><span className='float-left'>Welcome into the complex </span><br /> <span className='float-left'> styling's world</span></b></h3>
+                <h3 className='text-[#ffffff] bg-transparent w-full element'><b className='float-left'><span className='float-left'>Welcome into the  </span><br /> <span className='float-left'> styling's world</span></b></h3>
             </div>
             <div className='w-full'>
                 <button onClick={handleClick}>Get started</button>
