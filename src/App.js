@@ -34,7 +34,7 @@ function App() {
                 <h3 className='text-[#ffffff] bg-transparent w-full element'><b className='float-left'><span className='float-left'>Welcome into the  </span><br /> <span className='float-left'> styling's world</span></b></h3>
             </div>
             <div className='w-full'>
-                <button onClick={handleClick}>Get started</button>
+                <button onClick={handleClick}>I discover the Ai power</button>
             </div>
         </main>
       </div>
