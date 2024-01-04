@@ -85,6 +85,9 @@ main button,h3 {
     main div h2 {
         height: 150px;
     }
+    main div h3{
+        margin-top: 4rem;
+    }
     main div a{
         font-size: 2rem;
     }
