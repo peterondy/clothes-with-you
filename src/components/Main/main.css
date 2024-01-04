@@ -65,6 +65,10 @@ main button,h3 {
     main h3{
         font-size: 3rem;
     }
+    main div button{
+        margin-top: 2rem;                     
+        font-size: 2rem;
+    }
 }
 @media (max-width: 500px) {
     main h2{
@@ -73,6 +77,11 @@ main button,h3 {
     }
     main h3{
         font-size: 3rem;
+    }
+    main div button{
+        margin-top: 1.5rem;                     
+        font-size: 2rem;
+        padding: 1rem 0.5rem
     }
     main img{
         top: -200px;
@@ -87,9 +96,16 @@ main button,h3 {
     }
     main div h3{
         margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 3rem
     }
     main div a{
         font-size: 2rem;
+    }
+    main div button{
+        margin-top: 1.5rem;                     
+        font-size: 2rem;
+        padding: 1rem 0.5rem
     }
 }
 @media (max-width: 300px) {
@@ -102,6 +118,17 @@ main button,h3 {
         left: 90px;
         width: 150px;
         height: 230px;
+    }
+    main div h3{
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        font-size: 2rem
+    }
+
+    main div button{
+        margin-top: 1.5rem;                     
+        font-size: 1.5rem;
+        padding: 0.5rem
     }
 }
 
